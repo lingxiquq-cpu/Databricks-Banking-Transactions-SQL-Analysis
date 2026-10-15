@@ -1,5 +1,8 @@
 # Databricks-Banking-Transactions-SQL-Analysis
 
+![Data Loading and Table Creation](images/data-loading-and-table-creation.png)
+
+
 ## Data Source
 
 - Kaggle: Banking Transactions Dataset
