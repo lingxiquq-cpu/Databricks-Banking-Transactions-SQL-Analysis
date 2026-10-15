@@ -54,7 +54,7 @@ Checked 2,000,000 transaction records for missing values in transaction amounts 
 
 Checked for duplicate transaction IDs using `GROUP BY` and `HAVING`. No duplicate transaction IDs were found.
 
-![Duplicate-Transaction-Chec](images/duplicate-transaction-check.png)
+![duplicate-Transaction-chec](images/duplicate-transaction-chec.png)
 
 ### Transaction Amount Range Check
 
