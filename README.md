@@ -109,14 +109,11 @@ Combined multi-table JOINs, aggregation, CTEs, and `RANK()` to identify the top 
 
 ## Business Recommendations
 
-1. **Customer Segmentation:** Use transaction activity, account balances, and credit scores to support customer segmentation and identify potential high-value customer groups.
+1. **High-Value Customer Identification:** Combine credit scores and total transaction amounts to identify high-value customers and recommend exclusive mobile banking investment services to customers with high credit scores.
 
-2. **Transaction Monitoring:** Establish monitoring rules for unusually large or negative transaction amounts to support data quality checks and risk management.
+2. **Transaction Trends:** Use months with above-average total transaction amounts to support marketing campaigns and improve customer engagement.
 
-3. **Customer Engagement:** Analyze monthly transaction activity to identify periods of higher customer engagement and support marketing planning.
-
-4. **Channel Strategy:** Use transaction rankings across channels to better understand customer preferences and support targeted banking services.
-
+3. **Risk Monitoring:** Establish automated alerts for unusual transaction amounts, such as extremely large or negative transactions.
 ## Notebook File
 Databricks notebook available in the `notebooks` folder.
 
