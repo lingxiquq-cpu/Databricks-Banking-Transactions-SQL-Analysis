@@ -36,7 +36,6 @@ The CSV files were uploaded to a Databricks Unity Catalog Volume. PySpark was us
 6. Used window functions to calculate cumulative transaction amounts and rank transactions.
 7. Combined JOINs, CTEs, and window functions to identify top customer groups by transaction amount across different channels.
 
-## Data Preparation
 
 ### Data Loading and Table Creation
 
@@ -44,7 +43,6 @@ Used PySpark to load five CSV files and save them as tables in Databricks for SQ
 
 ![Data Loading and Table Creation](images/data-loading-and-table-creation.png)
 
-## Data Quality Checks
 
 ### Missing Value Check
 
@@ -56,7 +54,7 @@ Checked 2,000,000 transaction records for missing values in transaction amounts 
 
 Checked for duplicate transaction IDs using `GROUP BY` and `HAVING`. No duplicate transaction IDs were found.
 
-![Duplicate Transaction Check](images/duplicate-transaction-check.png)
+![Duplicate-Transaction-Chec](images/duplicate-transaction-check.png)
 
 ### Transaction Amount Range Check
 
@@ -64,7 +62,6 @@ Checked for negative transaction amounts and transactions exceeding 1,000,000. N
 
 ![Transaction Amount Range Check](images/transaction-amount-range-check.png)
 
-## SQL Analysis
 
 ### Multi-Table JOIN Analysis
 
@@ -78,7 +75,6 @@ Used a CTE to calculate monthly transaction amounts and transaction counts. Iden
 
 ![Monthly Transaction Analysis](images/monthly-transaction-cte.png)
 
-## Window Function Analysis
 
 ### Cumulative Transaction Amount by Account
 
