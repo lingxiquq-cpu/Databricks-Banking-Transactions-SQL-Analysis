@@ -37,58 +37,58 @@ The CSV files were uploaded to a Databricks Unity Catalog Volume. PySpark was us
 7. Combined JOINs, CTEs, and window functions to identify top customer groups by transaction amount across different channels.
 
 
-### Data Loading and Table Creation
+## Data Loading and Table Creation
 
 Used PySpark to load five CSV files and save them as tables in Databricks for SQL analysis.
 
 ![Data Loading and Table Creation](images/data-loading-and-table-creation.png)
 
 
-### Missing Value Check
+## Missing Value Check
 
 Checked 2,000,000 transaction records for missing values in transaction amounts and dates. No missing values were found in either field.
 
 ![Missing Value Check](images/missing-value-check.png)
 
-### Duplicate Transaction Check
+## Duplicate Transaction Check
 
 Checked for duplicate transaction IDs using `GROUP BY` and `HAVING`. No duplicate transaction IDs were found.
 
 ![duplicate-Transaction-chec](images/duplicate-transaction-chec.png)
 
-### Transaction Amount Range Check
+## Transaction Amount Range Check
 
 Checked for negative transaction amounts and transactions exceeding 1,000,000. No transactions were found outside the specified range.
 
 ![Transaction Amount Range Check](images/transaction-amount-range-check.png)
 
 
-### Multi-Table JOIN Analysis
+## Multi-Table JOIN Analysis
 
 Joined the `customers`, `accounts`, and `transactions` tables to analyze customer annual income, credit scores, account types, balances, total transaction amounts, and transaction counts.
 
 ![Multi-Table JOIN Analysis](images/multi-table-join-summary.png)
 
-### Monthly Transaction Analysis Using CTE
+## Monthly Transaction Analysis Using CTE
 
 Used a CTE to calculate monthly transaction amounts and transaction counts. Identified months with total transaction amounts above the average monthly total.
 
 ![Monthly Transaction Analysis](images/monthly-transaction-cte.png)
 
 
-### Cumulative Transaction Amount by Account
+## Cumulative Transaction Amount by Account
 
 Used `SUM() OVER()` with `PARTITION BY` to calculate cumulative transaction amounts for each account, ordered by transaction date.
 
 ![Cumulative Transaction Amount](images/cumulative-transaction-amount.png)
 
-### Transaction Amount Ranking by Account
+## Transaction Amount Ranking by Account
 
 Used `RANK()` to rank transactions by amount within each account, helping identify the largest individual transactions.
 
 ![Transaction Amount Ranking](images/transaction-amount-ranking.png)
 
-### Top Customers by Transaction Amount per Channel
+## Top Customers by Transaction Amount per Channel
 
 Combined multi-table JOINs, aggregation, CTEs, and `RANK()` to identify the top three customer groups by total transaction amount in each transaction channel and display their credit scores.
 
